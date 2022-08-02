@@ -26,14 +26,12 @@
     <p>Ufa! <del>Me livre da maldição.</del></p>
     <!--Comentário em Html-->
     <script>
-        var n1 = Number( window.prompt('Digite um número: '))
-        var n2 = Number(window.prompt('Digite outro número: '))
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Agora, digite outro número: '))//ou Number.parseInt/Number.parseFloat
         var soma = n1 + n2
-        window.alert (`A soma entre ${n1} e ${n2} é igual a ${soma}.`)// + para Concatenação ou Adição
-        /*(number + number) para adição
-            (string + string) para concatenação*/
-
-
+        window.alert(`À soma entre ${n1} e ${n2} é: ${soma}.`)
+        //+ : tanto para adição (number + number), quanto para concatenação (string + string).
+        
     </script>
 </body>
 </html>
