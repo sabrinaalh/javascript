@@ -7,19 +7,27 @@
     <title>Contando sopa de letrinhas</title>
     <style>
         body{
-            font:italic bolder 30px Arial;
-            
+            font:italic bolder 30px Arial;   
         }
     </style>
 </head>
 <body>
+
+
+
+    
     <script>
-        var nome = window.prompt('Qual teu nome, oh vagabundo(a)?')
+        var nome = window.prompt('Qual vosso nome senhor(a)?')
+        document.write(`Olá, senhor(a) <strong>${nome}</strong>.<br>Seu nome possui ${nome.length} tantas letras.`)
+        document.write(`Seu nome em maiusculo é ${nome.toUpperCase()}.<br>`)
+        document.write(`Logo, seu nome em minusculo é ${nome.toLowerCase()}.`)
+
+
+        /*var nome = window.prompt('Qual teu nome, oh vagabundo(a)?')
         document.write(`Olá ${nome.toUpperCase()} otário. Seu nome tem ${nome.length} letras fodidas.
          <br> Oo nome ruim!`)
         document.write(` Seu nome pequititoco é assim oh: <br>
-        ${nome.toLowerCase()}.`)
+        ${nome.toLowerCase()}.`)*/
     </script>
-    
 </body>
 </html>
