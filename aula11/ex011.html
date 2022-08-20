@@ -53,14 +53,11 @@
         var res = document.getElementById('res')
         var país = p.value 
 
-        if(país == 'brasil'|| país == 'Brasil'){
+        if(país == 'brasil'|| país == 'Brasil' || país == 'br'){
             res.innerHTML = (`Você nasceu no <strong>${país}</strong>, logo você é <strong>brasileiro</strong.`)
         }
-        else if (país !== 'brasil'){
-            res.innerHTML = (`Você não nasceu aqui, logo você <strong>NÃO é brasileiro</strong>.`)
-        }
         else{
-            res.innerHTML = ('Insira algo acima.')
+            res.innerHTML = (`Você não nasceu aqui, logo você <strong>NÃO é brasileiro</strong>.`)
         }
     }
 
