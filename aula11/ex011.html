@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que país é esse?</title>
+    <style>
+        body{
+            background-color: #ccdde2;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div#insimg{
+            background-image: url(qpaiseesse.jpg);
+            background-position: 100%;
+            color: aliceblue;
+        }
+        input#btt{
+            padding:2px 10px 2px 10px;
+            border: none;
+            background-color: #583e23;
+            color: #b0a084;
+            cursor: pointer;
+            border-radius: 3px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input#btt:hover{
+            background-color: #13262f;
+
+        }
+        input#txtpais{
+            border: none;
+        }
+        div#res{
+            color: #13262f;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="insimg">
+        <h1>'Que país é esse?'</h1>
+    </div>
+    <h4>Confirme sua nacionalidade</h4>
+    Eu nasci no: <input type="text" name="txtpais" id="txtpais">
+    <input id= "btt" type="button" value="Conferir" onclick="conferir()">
+    <div id="res"></div>
+
+    <script>
+        
+    function conferir(){
+        var p = document.getElementById('txtpais')
+        var res = document.getElementById('res')
+        var país = p.value 
+
+        if(país == 'brasil'|| país == 'Brasil'){
+            res.innerHTML = (`Você nasceu no <strong>${país}</strong>, logo você é <strong>brasileiro</strong.`)
+        }
+        else if (país !== 'brasil'){
+            res.innerHTML = (`Você não nasceu aqui, logo você <strong>NÃO é brasileiro</strong>.`)
+        }
+        else{
+            res.innerHTML = ('Insira algo acima.')
+        }
+    }
+
+        
+    </script>
+
+    
+</body>
+</html>
