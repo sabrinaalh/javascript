@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício em Casa</title>
+</head>
+<body>
+    <div style="border: 3px solid black; width: 250px; height: 250px;margin: auto;padding: 50px; margin-top: 100px;">
+        Valor 01:<input style="border: 1px solid black ;" type="number" id="v1" placeholder="Digite o 1o valor"><br>
+        <br>
+        Valor 02:<input style="border: 1px solid black ;" type="number" id="v2" placeholder="Digite o 2o valor"><br>
+        <br>
+        Valor 03:<input  style="border: 1px solid black ;"type="number" placeholder="Digite o 3o valor"  id="v3"><br>
+        <br>
+        Média:	&#160; <input  style="border: 1px solid black ;"type="number" placeholder="Aqui aparecerá a média!"  id="media">
+        <br><br>
+        <button type="button" onclick="veramedia()" style="cursor: pointer; background-color:black;color: aliceblue;">Calcular média</button>
+        <br>
+
+        <small>Obs: se nenhum número for digitado, a média será igual a 0.</small>
+
+    </div>
+    <p  style="text-align:center ;">&#169;By Sabrina</p>
+    <script>
+   function veramedia(){
+
+        let v1 = Number(document.getElementById("v1").value)
+        let v2 = Number(document.getElementById("v2").value)
+        let v3 = Number(document.getElementById("v3").value)
+
+        let soma = (v1 + v2 + v3)/3
+ 
+       document.getElementById("media").value = soma
+   }
+    </script>
+</body>
+</html>
