@@ -8,20 +8,45 @@
 </head>
 <body>
     <script>
+        console.log("Informações de Carros [A VENDA]")
+
         class Carro{
-            constructor(x){
+            
+            constructor(x,y){
+                this.marca = "Fiat"
+                this.modelo = "Uno"
                 this.cor = x
+                this.ligado = false
+                this.km = y
+                this.combustivel = 10
+   
             }
             info(){
+                console.log(`Marca: ${this.marca}`)
+                console.log(`Modelo: ${this.modelo}`)
                 console.log(`Cor: ${this.cor}`)
+                console.log(`Ligado: ${(this.ligado ? "Sim" : "Não")}`)
+                console.log(`Kilometros: ${this.km}`)
+                console.log(`Combustivel: ${this.combustivel}`)
+                console.log("---------------------------")
+            }
+            ligar(){
+                this.ligado = true
+            }
+            desligar(){
+                this.ligado = false
+            }
+            ligaDesliga(){
+                this.ligado = Id
             }
         }
 
-        let carros = new Carro("Preto")
-        let carrinhos= new Carro("Branco")
+        let carros = new Carro("Preto",100)
+        let carrinhos= new Carro("Branco", 0)
     
         carros.cor="Vermelho"
-        
+        carrinhos.ligar()
+
         carros.info()
         carrinhos.info()
 
