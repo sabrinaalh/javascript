@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Carro{
+            //Declarar fora do construtor: cor="Vermelho"
+            constructor(x){
+                this.cor= x//ou this.cor="Vermelho"
+                //Faz referencia a propria classe
+                console.log("Olá, sou um novo carro " + this.cor)
+            }
+        }
+
+        let carro = new Carro("Azul")
+        let carro1 = new Carro("Verde")
+        let carro2 = new Carro("Amarelo")
+        //Um carro não tem relação com outro.
+
+
+    </script>
+    
+</body>
+</html>

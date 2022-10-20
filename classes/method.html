@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método</title>
+</head>
+<body>
+    <script>
+        class Carro{
+            constructor(x){
+                this.cor = x
+            }
+            info(){
+                console.log(`Cor: ${this.cor}`)
+            }
+        }
+
+        let carros = new Carro("Preto")
+        let carrinhos= new Carro("Branco")
+    
+        carros.cor="Vermelho"
+        
+        carros.info()
+        carrinhos.info()
+
+    </script>
+    
+</body>
+</html>
